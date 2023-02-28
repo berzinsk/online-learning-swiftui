@@ -9,14 +9,22 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack {
-            HomeHeaderView()
-            TodayView()
-                .padding(.horizontal, 20)
-            StartLearningView()
-                .padding(20)
-            Spacer()
+        ScrollView {
+            VStack {
+                ZStack {
+                    HomeHeaderView()
+                    TodayView()
+                        .padding(.horizontal, 20)
+                        .offset(CGSize(width: 0, height: 96))
+                }
+                StartLearningView()
+                    .padding(.horizontal, 20)
+                    .padding(.top, 72)
+
+                Spacer()
+            }
         }
+        .ignoresSafeArea()
     }
 }
 

@@ -25,7 +25,7 @@ struct HomeHeaderView: View {
                 .resizable()
                 .frame(width: 36, height: 50)
         }
-        .padding(EdgeInsets(top: 16, leading: 16, bottom: 64, trailing: 16))
+        .padding(EdgeInsets(top: 64, leading: 16, bottom: 64, trailing: 16))
         .background(Color(0x3D5CFF))
     }
 }
