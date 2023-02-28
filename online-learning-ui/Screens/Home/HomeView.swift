@@ -13,6 +13,8 @@ struct HomeView: View {
             HomeHeaderView()
             TodayView()
                 .padding(.horizontal, 20)
+            StartLearningView()
+                .padding(20)
             Spacer()
         }
     }
