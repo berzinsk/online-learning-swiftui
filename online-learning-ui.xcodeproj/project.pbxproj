@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		12E9A21729ADB83E00DDA00C /* online_learning_uiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9A21629ADB83E00DDA00C /* online_learning_uiApp.swift */; };
-		12E9A21929ADB83E00DDA00C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9A21829ADB83E00DDA00C /* ContentView.swift */; };
 		12E9A21B29ADB83F00DDA00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A21A29ADB83F00DDA00C /* Assets.xcassets */; };
 		12E9A21E29ADB83F00DDA00C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A21D29ADB83F00DDA00C /* Preview Assets.xcassets */; };
 		12E9A23729ADB8B000DDA00C /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A22529ADB8AF00DDA00C /* Poppins-MediumItalic.ttf */; };
@@ -29,12 +28,14 @@
 		12E9A24629ADB8B000DDA00C /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A23429ADB8B000DDA00C /* Poppins-Black.ttf */; };
 		12E9A24729ADB8B000DDA00C /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A23529ADB8B000DDA00C /* Poppins-Regular.ttf */; };
 		12E9A24829ADB8B000DDA00C /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A23629ADB8B000DDA00C /* Poppins-BoldItalic.ttf */; };
+		12E9A24C29ADB99100DDA00C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9A24B29ADB99100DDA00C /* HomeView.swift */; };
+		12E9A24F29ADBABD00DDA00C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9A24E29ADBABD00DDA00C /* Color+Ext.swift */; };
+		12E9A25329ADBCBB00DDA00C /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9A25229ADBCBB00DDA00C /* HomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12E9A21329ADB83E00DDA00C /* online-learning-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "online-learning-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E9A21629ADB83E00DDA00C /* online_learning_uiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = online_learning_uiApp.swift; sourceTree = "<group>"; };
-		12E9A21829ADB83E00DDA00C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12E9A21A29ADB83F00DDA00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E9A21D29ADB83F00DDA00C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12E9A22529ADB8AF00DDA00C /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		12E9A23529ADB8B000DDA00C /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		12E9A23629ADB8B000DDA00C /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		12E9A24929ADB8C000DDA00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		12E9A24B29ADB99100DDA00C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		12E9A24E29ADBABD00DDA00C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		12E9A25229ADBCBB00DDA00C /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +92,11 @@
 		12E9A21529ADB83E00DDA00C /* online-learning-ui */ = {
 			isa = PBXGroup;
 			children = (
+				12E9A24D29ADBA6E00DDA00C /* Extensions */,
+				12E9A24A29ADB97200DDA00C /* Screens */,
 				12E9A24929ADB8C000DDA00C /* Info.plist */,
 				12E9A22429ADB89500DDA00C /* Fonts */,
 				12E9A21629ADB83E00DDA00C /* online_learning_uiApp.swift */,
-				12E9A21829ADB83E00DDA00C /* ContentView.swift */,
 				12E9A21A29ADB83F00DDA00C /* Assets.xcassets */,
 				12E9A21C29ADB83F00DDA00C /* Preview Content */,
 			);
@@ -129,6 +134,39 @@
 				12E9A23229ADB8B000DDA00C /* Poppins-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		12E9A24A29ADB97200DDA00C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				12E9A25029ADBC9700DDA00C /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		12E9A24D29ADBA6E00DDA00C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12E9A24E29ADBABD00DDA00C /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		12E9A25029ADBC9700DDA00C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				12E9A25129ADBCA000DDA00C /* Views */,
+				12E9A24B29ADB99100DDA00C /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		12E9A25129ADBCA000DDA00C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12E9A25229ADBCBB00DDA00C /* HomeHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E9A21929ADB83E00DDA00C /* ContentView.swift in Sources */,
+				12E9A25329ADBCBB00DDA00C /* HomeHeaderView.swift in Sources */,
+				12E9A24C29ADB99100DDA00C /* HomeView.swift in Sources */,
 				12E9A21729ADB83E00DDA00C /* online_learning_uiApp.swift in Sources */,
+				12E9A24F29ADBABD00DDA00C /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
