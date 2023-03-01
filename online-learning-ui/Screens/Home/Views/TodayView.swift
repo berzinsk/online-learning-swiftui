@@ -37,7 +37,7 @@ struct TodayView: View {
 
             Rectangle()
                 .fill(Color(0xF4F3FD))
-                .frame(width: .infinity, height: 6)
+                .frame(minWidth: 0, idealWidth: 100, maxWidth: .infinity, minHeight: 6, idealHeight: 6, maxHeight: 6)
                 .cornerRadius(3)
                 .overlay(alignment: .leading) {
                     Rectangle()
