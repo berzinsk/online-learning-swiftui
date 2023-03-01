@@ -23,7 +23,10 @@ struct HomeView: View {
 
                 LearningPlan()
                     .padding(.horizontal, 20)
-                    .padding(.top, 24)
+                    .padding([.vertical], 24)
+
+                MeetupView()
+                    .padding(.horizontal, 20)
 
                 Spacer()
             }
