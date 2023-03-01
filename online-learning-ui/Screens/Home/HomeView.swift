@@ -17,18 +17,15 @@ struct HomeView: View {
                         .padding(.horizontal, 20)
                         .offset(CGSize(width: 0, height: 96))
                 }
-                StartLearningView()
-                    .padding(.horizontal, 20)
-                    .padding(.top, 72)
 
-                LearningPlan()
-                    .padding(.horizontal, 20)
-                    .padding([.vertical], 24)
-
-                MeetupView()
-                    .padding(.horizontal, 20)
-
-                Spacer()
+                Group {
+                    StartLearningView()
+                        .padding(.top, 72)
+                    LearningPlan()
+                        .padding([.vertical], 24)
+                    MeetupView()
+                }
+                .padding(.horizontal, 20)
             }
         }
         .ignoresSafeArea()
