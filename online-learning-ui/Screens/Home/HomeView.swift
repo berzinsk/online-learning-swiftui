@@ -21,6 +21,10 @@ struct HomeView: View {
                     .padding(.horizontal, 20)
                     .padding(.top, 72)
 
+                LearningPlan()
+                    .padding(.horizontal, 20)
+                    .padding(.top, 24)
+
                 Spacer()
             }
         }
