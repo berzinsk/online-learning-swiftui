@@ -12,6 +12,7 @@ struct CourseView: View {
         VStack {
             CourseHeader()
             SearchField()
+            CourseCategories()
         }
         .padding(.horizontal, 20)
     }
