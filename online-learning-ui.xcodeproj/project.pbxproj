@@ -12,6 +12,9 @@
 		1221678429AE4A9C008023BB /* LearningPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221678329AE4A9C008023BB /* LearningPlan.swift */; };
 		122C88E629B062EF00D8C187 /* CourseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122C88E529B062EF00D8C187 /* CourseCategory.swift */; };
 		122C88EA29B0662E00D8C187 /* RoundedCornersShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122C88E929B0662E00D8C187 /* RoundedCornersShape.swift */; };
+		124A7C4C29B1B3E2008604EA /* ChooseCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C4B29B1B3E2008604EA /* ChooseCourseView.swift */; };
+		124A7C4F29B1B40C008604EA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C4E29B1B40C008604EA /* Course.swift */; };
+		124A7C5129B1B6AC008604EA /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C5029B1B6AC008604EA /* FilterButton.swift */; };
 		124D7B6629B1078100179B57 /* CourseCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D7B6529B1078100179B57 /* CourseCategories.swift */; };
 		12949EF429AF0BB600D50170 /* MeetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12949EF329AF0BB600D50170 /* MeetupView.swift */; };
 		12949EF729AF0EE900D50170 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12949EF629AF0EE900D50170 /* CourseView.swift */; };
@@ -50,6 +53,9 @@
 		1221678329AE4A9C008023BB /* LearningPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPlan.swift; sourceTree = "<group>"; };
 		122C88E529B062EF00D8C187 /* CourseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCategory.swift; sourceTree = "<group>"; };
 		122C88E929B0662E00D8C187 /* RoundedCornersShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersShape.swift; sourceTree = "<group>"; };
+		124A7C4B29B1B3E2008604EA /* ChooseCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCourseView.swift; sourceTree = "<group>"; };
+		124A7C4E29B1B40C008604EA /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		124A7C5029B1B6AC008604EA /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		124D7B6529B1078100179B57 /* CourseCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCategories.swift; sourceTree = "<group>"; };
 		12949EF329AF0BB600D50170 /* MeetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupView.swift; sourceTree = "<group>"; };
 		12949EF629AF0EE900D50170 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
@@ -111,6 +117,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		124A7C4A29B1B3D3008604EA /* ChooseCourse */ = {
+			isa = PBXGroup;
+			children = (
+				124A7C4B29B1B3E2008604EA /* ChooseCourseView.swift */,
+				124A7C5029B1B6AC008604EA /* FilterButton.swift */,
+			);
+			path = ChooseCourse;
+			sourceTree = "<group>";
+		};
+		124A7C4D29B1B3FE008604EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				124A7C4E29B1B40C008604EA /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		12949EF529AF0EDB00D50170 /* Course */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +146,7 @@
 		12949EF829AF145F00D50170 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				124A7C4A29B1B3D3008604EA /* ChooseCourse */,
 				12949EF929AF147200D50170 /* CourseHeader.swift */,
 				12949EFB29AF14B600D50170 /* SearchField.swift */,
 				122C88E529B062EF00D8C187 /* CourseCategory.swift */,
@@ -150,6 +174,7 @@
 		12E9A21529ADB83E00DDA00C /* online-learning-ui */ = {
 			isa = PBXGroup;
 			children = (
+				124A7C4D29B1B3FE008604EA /* Models */,
 				122C88E729B0661300D8C187 /* Common */,
 				12E9A24D29ADBA6E00DDA00C /* Extensions */,
 				12E9A24A29ADB97200DDA00C /* Screens */,
@@ -323,10 +348,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1221678429AE4A9C008023BB /* LearningPlan.swift in Sources */,
+				124A7C5129B1B6AC008604EA /* FilterButton.swift in Sources */,
 				124D7B6629B1078100179B57 /* CourseCategories.swift in Sources */,
 				12E9A25329ADBCBB00DDA00C /* HomeHeaderView.swift in Sources */,
 				12E9A24C29ADB99100DDA00C /* HomeView.swift in Sources */,
 				1221678029AE4A1C008023BB /* LearningProgressView.swift in Sources */,
+				124A7C4F29B1B40C008604EA /* Course.swift in Sources */,
 				12E9A21729ADB83E00DDA00C /* online_learning_uiApp.swift in Sources */,
 				1221677E29AE4986008023BB /* StartLearningView.swift in Sources */,
 				122C88EA29B0662E00D8C187 /* RoundedCornersShape.swift in Sources */,
@@ -336,6 +363,7 @@
 				12E9A25529ADC02D00DDA00C /* TodayView.swift in Sources */,
 				12949EF729AF0EE900D50170 /* CourseView.swift in Sources */,
 				12E9A24F29ADBABD00DDA00C /* Color+Ext.swift in Sources */,
+				124A7C4C29B1B3E2008604EA /* ChooseCourseView.swift in Sources */,
 				12949EF429AF0BB600D50170 /* MeetupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

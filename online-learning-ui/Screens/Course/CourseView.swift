@@ -9,10 +9,11 @@ import SwiftUI
 
 struct CourseView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             CourseHeader()
             SearchField()
             CourseCategories()
+            ChooseCourseView()
         }
         .padding(.horizontal, 20)
     }
