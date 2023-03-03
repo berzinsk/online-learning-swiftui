@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CourseView: View {
     var body: some View {
-        ScrollView {
+        VStack {
             CourseHeader()
             SearchField()
             CourseCategories()

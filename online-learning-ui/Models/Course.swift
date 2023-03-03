@@ -11,6 +11,8 @@ struct Course: Identifiable {
     let id = UUID()
     let name: String
     let author: String
-    let price: String
+    let price: Double
     let lenght: Int
+    let enrolled: Int
+    let dateCreated: Date
 }
