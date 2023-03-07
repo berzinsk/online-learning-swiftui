@@ -28,8 +28,7 @@ struct CourseDetailsView: View {
                         LectureItemView(number: index, title: "Welcome to the Course", length: "6:10", isPlayed: isPlayed, isLocked: isLocked)
                     }
                 }
-                .padding(.top, 32)
-                .padding(.horizontal, 16)
+                .padding(EdgeInsets(top: 32, leading: 16, bottom: 32, trailing: 16))
                 .background(RoundedCornersShape(corners: [.topLeft, .topRight], radius: 16).fill(.white))
                 .padding(.top, 208)
             }
