@@ -11,21 +11,27 @@ struct CourseDetailsHeaderView: View {
     let course: Course
 
     var body: some View {
-        HStack(alignment: .top) {
-            VStack(alignment: .leading) {
-                Image("bestseller_tag_background")
-                    .overlay {
-                        Text("BESTSELLER")
-                            .font(.custom("Poppins-Regular", size: 12))
-                            .foregroundColor(Color(0x1F1F39))
-                    }
-                Text(course.name)
-                    .font(.custom("Poppins-Bold", size: 20))
-                    .foregroundColor(Color(0x1F1F39))
+        ZStack(alignment: .top) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Image("bestseller_tag_background")
+                        .overlay {
+                            Text("BESTSELLER")
+                                .font(.custom("Poppins-Regular", size: 12))
+                                .foregroundColor(Color(0x1F1F39))
+                        }
+                    Text(course.name)
+                        .font(.custom("Poppins-Bold", size: 20))
+                        .foregroundColor(Color(0x1F1F39))
+                        .frame(minWidth: 150, idealWidth: 150, maxWidth: 200, minHeight: 44, idealHeight: 44, maxHeight: 88, alignment: .topLeading)
+                }
+                .padding(.top, 32)
+                Spacer()
             }
-            .padding(.top, 32)
-            Spacer()
-            Image("course_details_placeholder")
+            HStack {
+                Spacer()
+                Image("course_details_placeholder")
+            }
         }
     }
 }
