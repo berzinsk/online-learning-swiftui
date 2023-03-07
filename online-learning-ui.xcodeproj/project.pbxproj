@@ -16,6 +16,9 @@
 		124A7C4F29B1B40C008604EA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C4E29B1B40C008604EA /* Course.swift */; };
 		124A7C5129B1B6AC008604EA /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C5029B1B6AC008604EA /* FilterButton.swift */; };
 		124D7B6629B1078100179B57 /* CourseCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124D7B6529B1078100179B57 /* CourseCategories.swift */; };
+		1261D72729B6F96B00CECB54 /* CourseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261D72629B6F96B00CECB54 /* CourseDetailsView.swift */; };
+		1261D72B29B6FB3700CECB54 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261D72A29B6FB3700CECB54 /* Mocks.swift */; };
+		1261D72D29B6FC7200CECB54 /* CourseDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261D72C29B6FC7200CECB54 /* CourseDetailsHeaderView.swift */; };
 		128F942729B226CC00F67D64 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128F942629B226CC00F67D64 /* CourseRow.swift */; };
 		12949EF429AF0BB600D50170 /* MeetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12949EF329AF0BB600D50170 /* MeetupView.swift */; };
 		12949EF729AF0EE900D50170 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12949EF629AF0EE900D50170 /* CourseView.swift */; };
@@ -58,6 +61,9 @@
 		124A7C4E29B1B40C008604EA /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		124A7C5029B1B6AC008604EA /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		124D7B6529B1078100179B57 /* CourseCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCategories.swift; sourceTree = "<group>"; };
+		1261D72629B6F96B00CECB54 /* CourseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsView.swift; sourceTree = "<group>"; };
+		1261D72A29B6FB3700CECB54 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		1261D72C29B6FC7200CECB54 /* CourseDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsHeaderView.swift; sourceTree = "<group>"; };
 		128F942629B226CC00F67D64 /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
 		12949EF329AF0BB600D50170 /* MeetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupView.swift; sourceTree = "<group>"; };
 		12949EF629AF0EE900D50170 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
@@ -137,6 +143,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1261D72529B6F94E00CECB54 /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1261D72829B6F96F00CECB54 /* Views */,
+				1261D72629B6F96B00CECB54 /* CourseDetailsView.swift */,
+			);
+			path = CourseDetails;
+			sourceTree = "<group>";
+		};
+		1261D72829B6F96F00CECB54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1261D72C29B6FC7200CECB54 /* CourseDetailsHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1261D72929B6FB2B00CECB54 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1261D72A29B6FB3700CECB54 /* Mocks.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		12949EF529AF0EDB00D50170 /* Course */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +208,7 @@
 		12E9A21529ADB83E00DDA00C /* online-learning-ui */ = {
 			isa = PBXGroup;
 			children = (
+				1261D72929B6FB2B00CECB54 /* Utils */,
 				124A7C4D29B1B3FE008604EA /* Models */,
 				122C88E729B0661300D8C187 /* Common */,
 				12E9A24D29ADBA6E00DDA00C /* Extensions */,
@@ -226,6 +258,7 @@
 		12E9A24A29ADB97200DDA00C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1261D72529B6F94E00CECB54 /* CourseDetails */,
 				12949EF529AF0EDB00D50170 /* Course */,
 				12E9A25029ADBC9700DDA00C /* Home */,
 			);
@@ -359,13 +392,16 @@
 				1221678029AE4A1C008023BB /* LearningProgressView.swift in Sources */,
 				124A7C4F29B1B40C008604EA /* Course.swift in Sources */,
 				12E9A21729ADB83E00DDA00C /* online_learning_uiApp.swift in Sources */,
+				1261D72D29B6FC7200CECB54 /* CourseDetailsHeaderView.swift in Sources */,
 				1221677E29AE4986008023BB /* StartLearningView.swift in Sources */,
 				122C88EA29B0662E00D8C187 /* RoundedCornersShape.swift in Sources */,
+				1261D72B29B6FB3700CECB54 /* Mocks.swift in Sources */,
 				12949EFC29AF14B600D50170 /* SearchField.swift in Sources */,
 				12949EFA29AF147200D50170 /* CourseHeader.swift in Sources */,
 				122C88E629B062EF00D8C187 /* CourseCategory.swift in Sources */,
 				12E9A25529ADC02D00DDA00C /* TodayView.swift in Sources */,
 				12949EF729AF0EE900D50170 /* CourseView.swift in Sources */,
+				1261D72729B6F96B00CECB54 /* CourseDetailsView.swift in Sources */,
 				12E9A24F29ADBABD00DDA00C /* Color+Ext.swift in Sources */,
 				124A7C4C29B1B3E2008604EA /* ChooseCourseView.swift in Sources */,
 				12949EF429AF0BB600D50170 /* MeetupView.swift in Sources */,

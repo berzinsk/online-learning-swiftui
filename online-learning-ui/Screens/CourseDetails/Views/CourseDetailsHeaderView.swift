@@ -1,0 +1,37 @@
+//
+//  CourseDetailsHeaderView.swift
+//  online-learning-ui
+//
+//  Created by Karlis Berzins on 07/03/2023.
+//
+
+import SwiftUI
+
+struct CourseDetailsHeaderView: View {
+    let course: Course
+
+    var body: some View {
+        HStack(alignment: .top) {
+            VStack(alignment: .leading) {
+                Image("bestseller_tag_background")
+                    .overlay {
+                        Text("BESTSELLER")
+                            .font(.custom("Poppins-Regular", size: 12))
+                            .foregroundColor(Color(0x1F1F39))
+                    }
+                Text(course.name)
+                    .font(.custom("Poppins-Bold", size: 20))
+                    .foregroundColor(Color(0x1F1F39))
+            }
+            .padding(.top, 32)
+            Spacer()
+            Image("course_details_placeholder")
+        }
+    }
+}
+
+struct CourseDetailsHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        CourseDetailsHeaderView(course: mockCourse)
+    }
+}
