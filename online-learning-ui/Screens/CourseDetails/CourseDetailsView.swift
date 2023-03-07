@@ -18,6 +18,22 @@ struct CourseDetailsView: View {
                 Spacer()
             }
             .padding(.horizontal, 16)
+
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .leading) {
+                    CourseDetailsDescriptionSection(course: course)
+                    ForEach(1...24, id: \.self) { index in
+                        let isPlayed = index == 1
+                        let isLocked = index > 2
+                        LectureItemView(number: index, title: "Welcome to the Course", length: "6:10", isPlayed: isPlayed, isLocked: isLocked)
+                    }
+                }
+                .padding(.top, 32)
+                .padding(.horizontal, 16)
+                .background(RoundedCornersShape(corners: [.topLeft, .topRight], radius: 16).fill(.white))
+                .padding(.top, 208)
+            }
+            .ignoresSafeArea(edges: .bottom)
         }
     }
 }

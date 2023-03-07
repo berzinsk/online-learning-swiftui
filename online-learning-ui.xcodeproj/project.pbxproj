@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121C7C5E29B789F7006AEB9C /* CourseDetailsDescriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121C7C5D29B789F7006AEB9C /* CourseDetailsDescriptionSection.swift */; };
+		121C7C6029B78A2B006AEB9C /* LectureItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121C7C5F29B78A2B006AEB9C /* LectureItemView.swift */; };
 		1221677E29AE4986008023BB /* StartLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221677D29AE4986008023BB /* StartLearningView.swift */; };
 		1221678029AE4A1C008023BB /* LearningProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221677F29AE4A1C008023BB /* LearningProgressView.swift */; };
 		1221678429AE4A9C008023BB /* LearningPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221678329AE4A9C008023BB /* LearningPlan.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121C7C5D29B789F7006AEB9C /* CourseDetailsDescriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsDescriptionSection.swift; sourceTree = "<group>"; };
+		121C7C5F29B78A2B006AEB9C /* LectureItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureItemView.swift; sourceTree = "<group>"; };
 		1221677D29AE4986008023BB /* StartLearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLearningView.swift; sourceTree = "<group>"; };
 		1221677F29AE4A1C008023BB /* LearningProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProgressView.swift; sourceTree = "<group>"; };
 		1221678329AE4A9C008023BB /* LearningPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPlan.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				1261D72C29B6FC7200CECB54 /* CourseDetailsHeaderView.swift */,
+				121C7C5D29B789F7006AEB9C /* CourseDetailsDescriptionSection.swift */,
+				121C7C5F29B78A2B006AEB9C /* LectureItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 				124D7B6629B1078100179B57 /* CourseCategories.swift in Sources */,
 				12E9A25329ADBCBB00DDA00C /* HomeHeaderView.swift in Sources */,
 				12E9A24C29ADB99100DDA00C /* HomeView.swift in Sources */,
+				121C7C6029B78A2B006AEB9C /* LectureItemView.swift in Sources */,
 				1221678029AE4A1C008023BB /* LearningProgressView.swift in Sources */,
 				124A7C4F29B1B40C008604EA /* Course.swift in Sources */,
 				12E9A21729ADB83E00DDA00C /* online_learning_uiApp.swift in Sources */,
@@ -403,6 +410,7 @@
 				12949EF729AF0EE900D50170 /* CourseView.swift in Sources */,
 				1261D72729B6F96B00CECB54 /* CourseDetailsView.swift in Sources */,
 				12E9A24F29ADBABD00DDA00C /* Color+Ext.swift in Sources */,
+				121C7C5E29B789F7006AEB9C /* CourseDetailsDescriptionSection.swift in Sources */,
 				124A7C4C29B1B3E2008604EA /* ChooseCourseView.swift in Sources */,
 				12949EF429AF0BB600D50170 /* MeetupView.swift in Sources */,
 			);
