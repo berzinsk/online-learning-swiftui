@@ -11,7 +11,7 @@ import SwiftUI
 struct online_learning_uiApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            AppView()
         }
     }
 }

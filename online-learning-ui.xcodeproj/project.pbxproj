@@ -14,6 +14,8 @@
 		1221678429AE4A9C008023BB /* LearningPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221678329AE4A9C008023BB /* LearningPlan.swift */; };
 		122C88E629B062EF00D8C187 /* CourseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122C88E529B062EF00D8C187 /* CourseCategory.swift */; };
 		122C88EA29B0662E00D8C187 /* RoundedCornersShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122C88E929B0662E00D8C187 /* RoundedCornersShape.swift */; };
+		123505BD29B7AE280092A626 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123505BC29B7AE280092A626 /* MessageView.swift */; };
+		123505BF29B7AE960092A626 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123505BE29B7AE960092A626 /* AppView.swift */; };
 		124A7C4C29B1B3E2008604EA /* ChooseCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C4B29B1B3E2008604EA /* ChooseCourseView.swift */; };
 		124A7C4F29B1B40C008604EA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C4E29B1B40C008604EA /* Course.swift */; };
 		124A7C5129B1B6AC008604EA /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A7C5029B1B6AC008604EA /* FilterButton.swift */; };
@@ -61,6 +63,8 @@
 		1221678329AE4A9C008023BB /* LearningPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPlan.swift; sourceTree = "<group>"; };
 		122C88E529B062EF00D8C187 /* CourseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCategory.swift; sourceTree = "<group>"; };
 		122C88E929B0662E00D8C187 /* RoundedCornersShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersShape.swift; sourceTree = "<group>"; };
+		123505BC29B7AE280092A626 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		123505BE29B7AE960092A626 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		124A7C4B29B1B3E2008604EA /* ChooseCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCourseView.swift; sourceTree = "<group>"; };
 		124A7C4E29B1B40C008604EA /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		124A7C5029B1B6AC008604EA /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
@@ -127,6 +131,14 @@
 				122C88E929B0662E00D8C187 /* RoundedCornersShape.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		123505BA29B7AE130092A626 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				123505BC29B7AE280092A626 /* MessageView.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		124A7C4A29B1B3D3008604EA /* ChooseCourse */ = {
@@ -264,9 +276,11 @@
 		12E9A24A29ADB97200DDA00C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				123505BA29B7AE130092A626 /* Message */,
 				1261D72529B6F94E00CECB54 /* CourseDetails */,
 				12949EF529AF0EDB00D50170 /* Course */,
 				12E9A25029ADBC9700DDA00C /* Home */,
+				123505BE29B7AE960092A626 /* AppView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -389,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123505BF29B7AE960092A626 /* AppView.swift in Sources */,
 				1221678429AE4A9C008023BB /* LearningPlan.swift in Sources */,
 				128F942729B226CC00F67D64 /* CourseRow.swift in Sources */,
 				124A7C5129B1B6AC008604EA /* FilterButton.swift in Sources */,
@@ -413,6 +428,7 @@
 				121C7C5E29B789F7006AEB9C /* CourseDetailsDescriptionSection.swift in Sources */,
 				124A7C4C29B1B3E2008604EA /* ChooseCourseView.swift in Sources */,
 				12949EF429AF0BB600D50170 /* MeetupView.swift in Sources */,
+				123505BD29B7AE280092A626 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
