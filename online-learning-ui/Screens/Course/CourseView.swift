@@ -9,13 +9,16 @@ import SwiftUI
 
 struct CourseView: View {
     var body: some View {
-        VStack {
-            CourseHeader()
-            SearchField()
-            CourseCategories()
-            ChooseCourseView()
+        NavigationStack {
+            VStack {
+                CourseHeader()
+                SearchField()
+                CourseCategories()
+                ChooseCourseView()
+            }
+            .padding(.horizontal, 20)
         }
-        .padding(.horizontal, 20)
+        .tint(.black)
     }
 }
 

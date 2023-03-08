@@ -12,6 +12,8 @@ enum FilterCategories {
 }
 
 struct ChooseCourseView: View {
+    var onCoursePress: ((Course) -> Void)?
+
     private let allCourses: [Course] = [
         Course(name: "Product Design v1.0",
                author: "Robertson Connine",
@@ -68,13 +70,23 @@ struct ChooseCourseView: View {
                 }
             }
             List(filteredCourses) { course in
-                CourseRow(course: course)
-                    .listRowSeparator(.hidden)
+                ZStack {
+                    CourseRow(course: course)
+                    NavigationLink {
+                        CourseDetailsView(course: course)
+                    } label: {
+                        EmptyView()
+                    }
+                    .opacity(0)
+                }
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
             }
+            .listStyle(.plain)
             .padding(.horizontal, -20)
         }
         .padding(.top, 32)
-        .listStyle(.plain)
+        .navigationTitle("")
         .onAppear {
             filteredCourses = allCourses
         }
