@@ -39,6 +39,6 @@ struct CourseDetailsView: View {
 
 struct CourseDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseDetailsView(course: mockCourse)
+        CourseDetailsView(course: mockCourses[0])
     }
 }

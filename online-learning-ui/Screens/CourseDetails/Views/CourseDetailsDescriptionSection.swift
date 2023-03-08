@@ -41,6 +41,6 @@ struct CourseDetailsDescriptionSection: View {
 
 struct CourseDetailsDescriptionSection_Previews: PreviewProvider {
     static var previews: some View {
-        CourseDetailsDescriptionSection(course: mockCourse)
+        CourseDetailsDescriptionSection(course: mockCourses[0])
     }
 }

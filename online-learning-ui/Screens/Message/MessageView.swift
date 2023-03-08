@@ -9,7 +9,24 @@ import SwiftUI
 
 struct MessageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            HStack {
+                Text("Notifications")
+                    .font(.custom("Poppins-Bold", size: 24))
+                    .foregroundColor(Color(0x1F1F39))
+                Spacer()
+            }
+
+            List(mockMessages) { message in
+                MessageItemView(message: message)
+                    .listRowSeparator(.hidden)
+            }
+            .listStyle(.plain)
+            .padding(.horizontal, -20)
+
+            Spacer()
+        }
+        .padding(.horizontal, 16)
     }
 }
 

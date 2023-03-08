@@ -38,6 +38,6 @@ struct CourseDetailsHeaderView: View {
 
 struct CourseDetailsHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseDetailsHeaderView(course: mockCourse)
+        CourseDetailsHeaderView(course: mockCourses[0])
     }
 }

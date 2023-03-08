@@ -7,15 +7,6 @@
 
 import Foundation
 
-let mockCourse = Course(name:
-                            "Product Design v1.0",
-                         author: "Robertson Connine",
-                         price: 190,
-                         lenght: 16,
-                         enrolled: 800,
-                         dateCreated: Date.now.addingTimeInterval(-(86400 * 89))
-                        )
-
 let mockCourses: [Course] = [
     Course(name: "Product Design v1.0",
            author: "Robertson Connine",
@@ -45,4 +36,10 @@ let mockCourses: [Course] = [
            enrolled: 500,
            dateCreated: Date.now.addingTimeInterval(-(86400 * 35))
           )
+]
+
+let mockMessages = [
+    Message(author: "Bert Pullman", text: "Congratulations on completing the first lesson, keep up the good work!", timePosted: "16:32"),
+    Message(author: "Daniel Lawson", text: "Your course has been updated, you can check the new course in your study course.", timePosted: "16:32", imageUrl: ""),
+    Message(author: "Nguyen Shane", text: "Congratulations, you have completed your registration! Let's start your learning journey next.", timePosted: "12:00"),
 ]

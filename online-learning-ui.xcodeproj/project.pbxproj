@@ -28,6 +28,8 @@
 		12949EF729AF0EE900D50170 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12949EF629AF0EE900D50170 /* CourseView.swift */; };
 		12949EFA29AF147200D50170 /* CourseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12949EF929AF147200D50170 /* CourseHeader.swift */; };
 		12949EFC29AF14B600D50170 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12949EFB29AF14B600D50170 /* SearchField.swift */; };
+		12AE559629B84CED0079C92D /* MessageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE559529B84CED0079C92D /* MessageItemView.swift */; };
+		12AE559829B84E7C0079C92D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AE559729B84E7C0079C92D /* Message.swift */; };
 		12E9A21729ADB83E00DDA00C /* online_learning_uiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9A21629ADB83E00DDA00C /* online_learning_uiApp.swift */; };
 		12E9A21B29ADB83F00DDA00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A21A29ADB83F00DDA00C /* Assets.xcassets */; };
 		12E9A21E29ADB83F00DDA00C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9A21D29ADB83F00DDA00C /* Preview Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		12949EF629AF0EE900D50170 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		12949EF929AF147200D50170 /* CourseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHeader.swift; sourceTree = "<group>"; };
 		12949EFB29AF14B600D50170 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		12AE559529B84CED0079C92D /* MessageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItemView.swift; sourceTree = "<group>"; };
+		12AE559729B84E7C0079C92D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		12E9A21329ADB83E00DDA00C /* online-learning-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "online-learning-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E9A21629ADB83E00DDA00C /* online_learning_uiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = online_learning_uiApp.swift; sourceTree = "<group>"; };
 		12E9A21A29ADB83F00DDA00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 		123505BA29B7AE130092A626 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				12AE559429B84CDF0079C92D /* Views */,
 				123505BC29B7AE280092A626 /* MessageView.swift */,
 			);
 			path = Message;
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				124A7C4E29B1B40C008604EA /* Course.swift */,
+				12AE559729B84E7C0079C92D /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +209,14 @@
 				12949EFB29AF14B600D50170 /* SearchField.swift */,
 				122C88E529B062EF00D8C187 /* CourseCategory.swift */,
 				124D7B6529B1078100179B57 /* CourseCategories.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12AE559429B84CDF0079C92D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12AE559529B84CED0079C92D /* MessageItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -416,9 +430,11 @@
 				12E9A21729ADB83E00DDA00C /* online_learning_uiApp.swift in Sources */,
 				1261D72D29B6FC7200CECB54 /* CourseDetailsHeaderView.swift in Sources */,
 				1221677E29AE4986008023BB /* StartLearningView.swift in Sources */,
+				12AE559829B84E7C0079C92D /* Message.swift in Sources */,
 				122C88EA29B0662E00D8C187 /* RoundedCornersShape.swift in Sources */,
 				1261D72B29B6FB3700CECB54 /* Mocks.swift in Sources */,
 				12949EFC29AF14B600D50170 /* SearchField.swift in Sources */,
+				12AE559629B84CED0079C92D /* MessageItemView.swift in Sources */,
 				12949EFA29AF147200D50170 /* CourseHeader.swift in Sources */,
 				122C88E629B062EF00D8C187 /* CourseCategory.swift in Sources */,
 				12E9A25529ADC02D00DDA00C /* TodayView.swift in Sources */,
