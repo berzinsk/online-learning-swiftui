@@ -43,3 +43,10 @@ let mockMessages = [
     Message(author: "Daniel Lawson", text: "Your course has been updated, you can check the new course in your study course.", timePosted: "16:32", imageUrl: ""),
     Message(author: "Nguyen Shane", text: "Congratulations, you have completed your registration! Let's start your learning journey next.", timePosted: "12:00"),
 ]
+
+let mockNotifications = [
+    Notification(type: .purchase, text: "Successful purchase!"),
+    Notification(type: .message, text: "Congratulations on completing the course. Don't stop now and look for other courses."),
+    Notification(type: .message, text: "Your course has been updated, you can view the changes on the course page."),
+    Notification(type: .message, text: "Congratulations, you have completed your firs course.")
+]
