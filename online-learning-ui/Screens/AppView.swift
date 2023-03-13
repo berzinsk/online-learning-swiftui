@@ -29,7 +29,7 @@ struct AppView: View {
                         TabItem(tab: .course, selected: selectedItem == 1)
                     }
                     .tag(1)
-                MessageView()
+                MessageListView()
                     .tabItem {
                         TabItem(tab: .message, selected: selectedItem == 2)
                     }
